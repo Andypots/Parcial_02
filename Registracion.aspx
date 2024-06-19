@@ -41,7 +41,7 @@
     <tr>
         <td class="auto-style2">&nbsp;</td>
         <td class="auto-style1" colspan="2">
-            <asp:Label ID="Label2" runat="server" Font-Size="XX-Large" Text="Registracion"></asp:Label>
+            <asp:Label ID="Label2" runat="server" Font-Size="XX-Large" Text="Registración"></asp:Label>
         </td>
         <td>&nbsp;</td>
     </tr>
