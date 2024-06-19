@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Parcial_02.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <h3> 
+                <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/Registracion.aspx" BackColor="#3366CC" BorderColor="#3366CC" BorderStyle="Solid" ForeColor="White">Registración</asp:LinkButton>&nbsp;
+                <asp:LinkButton ID="LinkButton2" runat="server" PostBackUrl="~/GestionDeArchivos.aspx" BackColor="#3366CC" BorderColor="#3366CC" BorderStyle="Solid" ForeColor="White">Gestión de archivos</asp:LinkButton>
+            </h3>
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <h4 class="auto-style1">
+                <asp:Label ID="Label1" runat="server" Text="Parcial 02 - TP4 - ISSD"></asp:Label>
+
+            </h4>
+        </div>
+    </form>
+</body>
+</html>
