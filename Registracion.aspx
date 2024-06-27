@@ -65,7 +65,7 @@
     <tr>
         <td class="auto-style5"></td>
         <td class="auto-style6">
-            <asp:Label ID="Label3" runat="server" Text="Nombre:"></asp:Label>
+            <asp:Label ID="Label3" runat="server" Text="Nombre"></asp:Label>
         </td>
         <td class="auto-style10">
             <asp:TextBox ID="TextBox1" runat="server" Width="200px"></asp:TextBox>
@@ -77,7 +77,7 @@
     <tr>
         <td class="auto-style2">&nbsp;</td>
         <td class="auto-style3">
-            <asp:Label ID="Label4" runat="server" Text="Apellido:"></asp:Label>
+            <asp:Label ID="Label4" runat="server" Text="Apellido"></asp:Label>
         </td>
         <td class="auto-style4">
             <asp:TextBox ID="TextBox2" runat="server" Width="200px"></asp:TextBox>
@@ -89,7 +89,7 @@
     <tr>
         <td class="auto-style11"></td>
         <td class="auto-style12">
-            <asp:Label ID="Label5" runat="server" Text="Dirección:"></asp:Label>
+            <asp:Label ID="Label5" runat="server" Text="Dirección"></asp:Label>
         </td>
         <td class="auto-style7">
             <asp:TextBox ID="TextBox3" runat="server" Width="200px"></asp:TextBox>
@@ -101,7 +101,7 @@
     <tr>
         <td class="auto-style2">&nbsp;</td>
         <td class="auto-style3">
-            <asp:Label ID="Label6" runat="server" Text="Mail:"></asp:Label>
+            <asp:Label ID="Label6" runat="server" Text="Mail"></asp:Label>
         </td>
         <td class="auto-style4">
             <asp:TextBox ID="TextBox4" runat="server" TextMode="Email" Width="200px"></asp:TextBox>
@@ -114,7 +114,7 @@
     <tr>
         <td class="auto-style2">&nbsp;</td>
         <td class="auto-style3">
-            <asp:Label ID="Label7" runat="server" Text="Repetir Mail:"></asp:Label>
+            <asp:Label ID="Label7" runat="server" Text="Repetir Mail"></asp:Label>
         </td>
         <td class="auto-style4">
             <asp:TextBox ID="TextBox5" runat="server" TextMode="Email" Width="200px"></asp:TextBox>
