@@ -20,7 +20,7 @@
     }
     .auto-style7 {
         width: 123px;
-        height: 26px;
+        height: 4px;
     }
     .auto-style8 {
         height: 26px;
@@ -33,6 +33,17 @@
             width: 123px;
             margin-left: 320px;
             height: 26px;
+        }
+        .auto-style11 {
+            width: 331px;
+            height: 4px;
+        }
+        .auto-style12 {
+            width: 154px;
+            height: 4px;
+        }
+        .auto-style13 {
+            height: 4px;
         }
     </style>
 </asp:Content>
@@ -54,7 +65,7 @@
     <tr>
         <td class="auto-style5"></td>
         <td class="auto-style6">
-            <asp:Label ID="Label3" runat="server" Text="Username"></asp:Label>
+            <asp:Label ID="Label3" runat="server" Text="Nombre"></asp:Label>
         </td>
         <td class="auto-style10">
             <asp:TextBox ID="TextBox1" runat="server" Width="200px"></asp:TextBox>
@@ -66,49 +77,47 @@
     <tr>
         <td class="auto-style2">&nbsp;</td>
         <td class="auto-style3">
-            <asp:Label ID="Label4" runat="server" Text="Mail"></asp:Label>
+            <asp:Label ID="Label4" runat="server" Text="Apellido"></asp:Label>
         </td>
         <td class="auto-style4">
-            <asp:TextBox ID="TextBox2" runat="server" TextMode="Email" Width="200px"></asp:TextBox>
+            <asp:TextBox ID="TextBox2" runat="server" Width="200px"></asp:TextBox>
         </td>
         <td>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox2" ErrorMessage="RequiredFieldValidator" ForeColor="Red">El campo es obligatorio</asp:RequiredFieldValidator>
-            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBox2" ErrorMessage="RegularExpressionValidator" ForeColor="Red" ValidationExpression="^[^@\s]+@[^@\s]+\.[^@\s]+$">El mail no tiene un formato válido</asp:RegularExpressionValidator>
         </td>
     </tr>
     <tr>
-        <td class="auto-style5"></td>
-        <td class="auto-style6">
-            <asp:Label ID="Label5" runat="server" Text="Edad"></asp:Label>
+        <td class="auto-style11"></td>
+        <td class="auto-style12">
+            <asp:Label ID="Label5" runat="server" Text="Dirección"></asp:Label>
         </td>
         <td class="auto-style7">
-            <asp:TextBox ID="TextBox3" runat="server" TextMode="Number" Width="100px"></asp:TextBox>
-&nbsp;
+            <asp:TextBox ID="TextBox3" runat="server" Width="200px"></asp:TextBox>
             </td>
-        <td class="auto-style8">
+        <td class="auto-style13">
             <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBox3" ErrorMessage="RequiredFieldValidator" ForeColor="Red">El campo es obligatorio</asp:RequiredFieldValidator>
-            <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="TextBox3" ErrorMessage="RangeValidator" ForeColor="Red" MaximumValue="99" MinimumValue="15" Type="Integer">No se pueden registrar menores de 15 años</asp:RangeValidator>
         </td>
     </tr>
     <tr>
         <td class="auto-style2">&nbsp;</td>
         <td class="auto-style3">
-            <asp:Label ID="Label6" runat="server" Text="Contraseña"></asp:Label>
+            <asp:Label ID="Label6" runat="server" Text="Mail"></asp:Label>
         </td>
         <td class="auto-style4">
-            <asp:TextBox ID="TextBox4" runat="server" TextMode="Password" Width="200px"></asp:TextBox>
+            <asp:TextBox ID="TextBox4" runat="server" TextMode="Email" Width="200px"></asp:TextBox>
         </td>
         <td>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextBox4" ErrorMessage="RequiredFieldValidator" ForeColor="Red">El campo es obligatorio</asp:RequiredFieldValidator>
+            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBox4" ErrorMessage="RegularExpressionValidator" ForeColor="Red" ValidationExpression="^[^@\s]+@[^@\s]+\.[^@\s]+$">El mail no tiene un formato válido</asp:RegularExpressionValidator>
         </td>
     </tr>
     <tr>
         <td class="auto-style2">&nbsp;</td>
         <td class="auto-style3">
-            <asp:Label ID="Label7" runat="server" Text="Repetir Contraseña"></asp:Label>
+            <asp:Label ID="Label7" runat="server" Text="Repetir Mail"></asp:Label>
         </td>
         <td class="auto-style4">
-            <asp:TextBox ID="TextBox5" runat="server" TextMode="Password" Width="200px"></asp:TextBox>
+            <asp:TextBox ID="TextBox5" runat="server" TextMode="Email" Width="200px"></asp:TextBox>
         </td>
         <td>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="TextBox5" ErrorMessage="RequiredFieldValidator" ForeColor="Red">El campo es obligatorio</asp:RequiredFieldValidator>

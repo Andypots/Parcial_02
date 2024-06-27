@@ -11,7 +11,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p class="auto-style2">
-        <asp:Label ID="Label2" runat="server" Text="Usuario:"></asp:Label>
+        <asp:Label ID="Label2" runat="server" Text="Nombre Completo: "></asp:Label>
         <asp:Label ID="Label3" runat="server" Text="----------"></asp:Label>
         <br />
     </p>
@@ -25,29 +25,29 @@
         <asp:Label ID="Label6" runat="server"></asp:Label>
     </p>
     <p class="auto-style3">
-        <asp:Label ID="Label7" runat="server"></asp:Label>
-    </p>
-    <p class="auto-style3">
+        &nbsp;</p>
         <asp:Label ID="Label5" runat="server" Text="Archivos guardados:"></asp:Label>
+    <p class="auto-style3">
+        <asp:GridView ID="GridView1" runat="server" OnRowCommand="GridView1_RowCommand" OnRowDataBound="GridView1_RowDataBound" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Vertical">
+                <AlternatingRowStyle BackColor="#DCDCDC" />
+                <Columns>
+                    <asp:ButtonField ButtonType="Button" CommandName="Descargar" HeaderText="Descargar" ShowHeader="True" Text="Descargar" />
+                </Columns>
+                <FooterStyle BackColor="#CCCCCC" ForeColor="Black" />
+                <HeaderStyle BackColor="#000084" Font-Bold="True" ForeColor="White" />
+                <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
+                <RowStyle BackColor="#EEEEEE" ForeColor="Black" />
+                <SelectedRowStyle BackColor="#008A8C" Font-Bold="True" ForeColor="White" />
+                <SortedAscendingCellStyle BackColor="#F1F1F1" />
+                <SortedAscendingHeaderStyle BackColor="#0000A9" />
+                <SortedDescendingCellStyle BackColor="#CAC9C9" />
+                <SortedDescendingHeaderStyle BackColor="#000065" />
+            </asp:GridView>
     </p>
     <p class="auto-style3">
-        <asp:GridView ID="gvFiles" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1">
-            <Columns>
-                <asp:BoundField DataField="archivo" HeaderText="archivo" SortExpression="archivo" />
-                <asp:ButtonField CommandName="Select" HeaderText="Descargar" ImageUrl="Server.MapPath(&quot;.&quot;) + &quot;/&quot; + Label3.Text" ShowHeader="True" Text="Descargar" />
-
-            </Columns>
-            </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:administracionConnectionString %>" InsertCommand="INSERT INTO imagenes(usuario,archivo) VALUES (@usuario, @archivo)" SelectCommand="SELECT archivo FROM imagenes where usuario = @usuario">
-            <InsertParameters>
-                <asp:Parameter Name="usuario" />
-                <asp:Parameter Name="archivo" />
-            </InsertParameters>
-            <SelectParameters>
-                <asp:ControlParameter ControlID="Label3" Name="usuario" PropertyName="Text" />
-            </SelectParameters>
-        </asp:SqlDataSource>
-    </p>
+        &nbsp;</p>
+    <p class="auto-style3">
+        &nbsp;</p>
 
 </asp:Content>
 

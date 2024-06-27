@@ -18,8 +18,8 @@
     <form id="form1" runat="server">
         <div>
             <h3> 
-                <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/Registracion.aspx" BackColor="#3366CC" BorderColor="#3366CC" BorderStyle="Solid" ForeColor="White">Registración</asp:LinkButton>&nbsp;
-                <asp:LinkButton ID="LinkButton2" runat="server" PostBackUrl="~/GestionDeArchivos.aspx" BackColor="#3366CC" BorderColor="#3366CC" BorderStyle="Solid" ForeColor="White">Gestión de archivos</asp:LinkButton>
+                <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/Registracion.aspx" BackColor="#000084" BorderColor="#000084" BorderStyle="Solid" ForeColor="White">Registración</asp:LinkButton>&nbsp;
+                <asp:LinkButton ID="LinkButton2" runat="server" PostBackUrl="~/GestionDeArchivos.aspx" BackColor="#000084" BorderColor="#000084" BorderStyle="Solid" ForeColor="White">Gestión de archivos</asp:LinkButton>
             </h3>
             <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
